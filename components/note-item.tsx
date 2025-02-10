@@ -1,18 +1,14 @@
-import { XMarkIcon } from '@heroicons/react/20/solid';
+import { TrashIcon } from '@heroicons/react/24/outline';
 import { type JSX, memo } from 'react';
 
+import { NoteItemActions } from '@/components/note-item-actions';
 import styles from '@/components/note-item.module.css';
 import type { NoteItemProps } from '@/types/note';
 
-const NoteItem = ({
-  title,
-  content,
-}: NoteItemProps): JSX.Element => {
+const NoteItem = ({ title, content }: NoteItemProps): JSX.Element => {
   return (
     <div className={styles['note-item']}>
-      <div className={styles['note-item-actions']}>
-        <button><XMarkIcon className="size-4" /></button>
-      </div>
+      <NoteItemActions />
       <h2>{title}</h2>
       <p>{content}</p>
     </div>

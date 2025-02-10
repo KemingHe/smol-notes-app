@@ -6,11 +6,7 @@ export const NoteForm = (): JSX.Element => {
   return (
     <form className={styles['note-form']}>
       <input placeholder="Title" required />
-      <textarea 
-        placeholder="Content"
-        rows={10}
-        required
-      />
+      <textarea placeholder="Content" rows={10} required />
       <button type="submit">Add Note</button>
     </form>
   );
