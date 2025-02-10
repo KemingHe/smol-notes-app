@@ -1,0 +1,19 @@
+.note-form {
+  @apply flex flex-col gap-2 m-5;
+}
+
+.note-form textarea {
+  @apply bg-gray-100;
+}
+
+.note-form input {
+  @apply bg-gray-100 font-semibold;
+}
+
+.note-form button {
+  @apply rounded-md border-none p-2 font-semibold text-base text-white bg-sky-500;
+}
+
+.note-form button:hover {
+  @apply bg-sky-700;
+}

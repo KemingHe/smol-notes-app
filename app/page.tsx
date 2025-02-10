@@ -1,11 +1,5 @@
-import type { JSX } from 'react';
+'use client';
 
-const Page = (): JSX.Element => {
-  return (
-    <div className="h-full flex flex-col justify-center items-center ">
-      <h1 className="text-2xl">Homepage</h1>
-    </div>
-  );
-};
+import { NotesPage } from '@/components/notes-page';
 
-export default Page;
+export default NotesPage;

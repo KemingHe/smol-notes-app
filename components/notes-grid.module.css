@@ -1,0 +1,5 @@
+.notes-grid {
+  @apply grid gap-5 m-5 mt-0 sm:mt-5;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+}
