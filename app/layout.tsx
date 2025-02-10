@@ -1,19 +1,21 @@
 import type { NextFont } from 'next/dist/compiled/@next/font';
 import { Inter } from 'next/font/google';
-import type { JSX, ReactNode } from 'react';
+import type { JSX } from 'react';
 
-import './globals.css';
+import type { LayoutProps } from '@/types/app-layout-propts';
+import '@/app/globals.css';
 
 export { metadata } from '@/app-config/metadata';
+export { viewport } from '@/app-config/viewport';
 
 const inter: NextFont = Inter({ subsets: ['latin'] });
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: ReactNode }>): JSX.Element {
+const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased h-dvh`}>{children}</body>
     </html>
   );
-}
+};
+
+export default Layout;
