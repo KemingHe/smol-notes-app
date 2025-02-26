@@ -26,6 +26,9 @@ importers:
       '@langchain/mongodb':
         specifier: ^0.1.0
         version: 0.1.0(@langchain/core@0.3.40(openai@4.85.4(zod@3.24.2)))
+      '@langchain/openai':
+        specifier: ^0.4.4
+        version: 0.4.4(@langchain/core@0.3.40(openai@4.85.4(zod@3.24.2)))
       langchain:
         specifier: ^0.3.19
         version: 0.3.19(@langchain/anthropic@0.3.14(@langchain/core@0.3.40(openai@4.85.4(zod@3.24.2))))(@langchain/core@0.3.40(openai@4.85.4(zod@3.24.2)))(openai@4.85.4(zod@3.24.2))
@@ -41,6 +44,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      server-only:
+        specifier: ^0.0.1
+        version: 0.0.1
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -1097,6 +1103,9 @@ packages:
     resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
     engines: {node: '>=10'}
     hasBin: true
+
+  server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
 
   sharp@0.33.5:
     resolution: {integrity: sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==}
@@ -2167,6 +2176,8 @@ snapshots:
   scheduler@0.25.0: {}
 
   semver@7.7.1: {}
+
+  server-only@0.0.1: {}
 
   sharp@0.33.5:
     dependencies:
