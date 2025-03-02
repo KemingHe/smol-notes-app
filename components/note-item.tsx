@@ -1,15 +1,13 @@
-import { TrashIcon } from '@heroicons/react/24/outline';
 import { type JSX, memo } from 'react';
 
 import { NoteItemActions } from '@/components/note-item-actions';
-import styles from '@/components/note-item.module.css';
 import type { NoteItemProps } from '@/types/note';
 
 const NoteItem = ({ title, content }: NoteItemProps): JSX.Element => {
   return (
-    <div className={styles['note-item']}>
+    <div className="flex flex-col p-2 border border-gray-300 rounded-md bg-gray-100 shadow-md">
       <NoteItemActions />
-      <h2>{title}</h2>
+      <h2 className="font-semibold">{title}</h2>
       <p>{content}</p>
     </div>
   );
