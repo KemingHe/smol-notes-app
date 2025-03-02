@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-import { COLOR_PRIMARY } from '@/constants/app-config';
+const COLOR_PRIMARY: string = '#ffffff';
 
 const manifest = (): MetadataRoute.Manifest => {
   return {

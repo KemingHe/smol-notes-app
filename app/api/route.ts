@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 
 import { client } from '@/lib/mongodb/client';
 
+// Disabled caching for endpoint
 export const dynamic = 'force-dynamic';
 
 export const GET = async (req: Request): Promise<NextResponse> => {

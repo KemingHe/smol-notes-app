@@ -1,33 +1,24 @@
-import styles from '@/components/note-item-actions.module.css';
-import {
-  DocumentDuplicateIcon,
-  HeartIcon as HeartIconOutline,
-  PencilIcon,
-  TrashIcon,
-} from '@heroicons/react/24/outline';
-import { HeartIcon as HeartIconSolid } from '@heroicons/react/24/solid';
 import type { JSX } from 'react';
+
+import { CopyAction } from '@/components/note-item-actions-safe-copy';
+import { EditAction } from '@/components/note-item-actions-safe-edit';
+import { FavoriteAction } from '@/components/note-item-actions-safe-favorite';
+import { ShareAction } from '@/components/note-item-actions-safe-share';
+import { DeleteAction } from '@/components/note-item-actions-unsafe-delete';
 
 export const NoteItemActions = (): JSX.Element => {
   return (
-    <div className={styles['actions-container']}>
-      <div className={styles['safe-actions']}>
-        <button type="button" className="group hover:text-pink-500">
-          <HeartIconOutline className="size-4 group-hover:hidden" />
-          <HeartIconSolid className="size-4 hidden group-hover:flex" />
-        </button>
-        <button type="button" className="hover:text-sky-500">
-          <PencilIcon className="size-4" />
-        </button>
-        <button type="button" className="hover:text-sky-500">
-          <DocumentDuplicateIcon className="size-4" />
-        </button>
+    <div className="flex items-center justify-between mt-0.5 mb-1">
+      {/* Safe actions. */}
+      <div className="flex flex-shrink-0 justify-start gap-1">
+        <FavoriteAction />
+        <EditAction />
+        <CopyAction />
+        <ShareAction />
       </div>
-      {/* Dangerous actions. */}
-      <div className={styles['dangerous-actions']}>
-        <button type="button">
-          <TrashIcon className="size-4" />
-        </button>
+      {/* Unsafe actions. */}
+      <div className="flex flex-shrink-0 justify-end gap-1 text-rose-600">
+        <DeleteAction />
       </div>
     </div>
   );

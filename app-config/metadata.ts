@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { getVersion } from '@/utils/package';
+import pkg from '@/package.json';
 
 export const metadata: Metadata = {
   title: 'Smol Notes App',
@@ -16,6 +16,6 @@ export const metadata: Metadata = {
   },
   category: 'technology',
   other: {
-    version: getVersion(),
+    version: pkg.version,
   },
 };
