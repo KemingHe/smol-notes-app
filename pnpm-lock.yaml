@@ -21,8 +21,8 @@ importers:
         specifier: ^0.3.42
         version: 0.3.42(openai@4.86.1(zod@3.24.2))
       '@langchain/langgraph':
-        specifier: ^0.2.51
-        version: 0.2.51(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)
+        specifier: ^0.2.53
+        version: 0.2.53(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)
       '@langchain/langgraph-checkpoint-mongodb':
         specifier: ^0.0.6
         version: 0.0.6(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(@langchain/langgraph-checkpoint@0.0.15(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2))))
@@ -36,8 +36,8 @@ importers:
         specifier: ^0.3.19
         version: 0.3.19(@langchain/anthropic@0.3.15(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2))))(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(openai@4.86.1(zod@3.24.2))
       mongodb:
-        specifier: ^6.14.0
-        version: 6.14.0
+        specifier: ^6.14.2
+        version: 6.14.2
       next:
         specifier: 15.1.6
         version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -58,8 +58,8 @@ importers:
         specifier: ^1.9.4
         version: 1.9.4
       '@types/node':
-        specifier: ^22.13.8
-        version: 22.13.8
+        specifier: ^22.13.9
+        version: 22.13.9
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.10
@@ -68,10 +68,10 @@ importers:
         version: 19.0.4(@types/react@19.0.10)
       commitizen:
         specifier: ^4.3.1
-        version: 4.3.1(@types/node@22.13.8)(typescript@5.8.2)
+        version: 4.3.1(@types/node@22.13.9)(typescript@5.8.2)
       cz-conventional-changelog:
         specifier: ^3.3.0
-        version: 3.3.0(@types/node@22.13.8)(typescript@5.8.2)
+        version: 3.3.0(@types/node@22.13.9)(typescript@5.8.2)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -339,8 +339,8 @@ packages:
     peerDependencies:
       '@langchain/core': '>=0.2.31 <0.4.0'
 
-  '@langchain/langgraph-sdk@0.0.45':
-    resolution: {integrity: sha512-y1nKJeP0U3mkj2fTyV3CsWqNgoLN7WidTJxZffLsTrq1DvqFU0ywWSwXyDlw90QIoc96eBOQDrruDyklph/HHg==}
+  '@langchain/langgraph-sdk@0.0.46':
+    resolution: {integrity: sha512-7Sq21kfhDKr80xp4loFR7k0uBetd9+/x+hPUckMNw29+ZpnCrDwO3afv7ddBJ/Mi9pI6hkB0vdvykpJedcCk3A==}
     peerDependencies:
       '@langchain/core': '>=0.2.31 <0.4.0'
       react: ^18 || ^19
@@ -350,8 +350,8 @@ packages:
       react:
         optional: true
 
-  '@langchain/langgraph@0.2.51':
-    resolution: {integrity: sha512-/ODuZIoaUhWeTGM8L524KB0v0pmIqPVW3SIu8WFDksaw7KcD9QWxS3ZKM2PkbE3yTlHsXNmJAjzoBOyE29H4oQ==}
+  '@langchain/langgraph@0.2.53':
+    resolution: {integrity: sha512-1LDG9eyO4whN0UuECTRKzfbnr/DjFG+OW57k1N3gXl8u6+f6Fw2W4yY+Jd92pY/mq3OS9FAB9Y5go16AjEn1lA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@langchain/core': '>=0.2.36 <0.3.0 || >=0.3.40 < 0.4.0'
@@ -459,11 +459,11 @@ packages:
   '@types/node-fetch@2.6.12':
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
-  '@types/node@18.19.78':
-    resolution: {integrity: sha512-m1ilZCTwKLkk9rruBJXFeYN0Bc5SbjirwYX/Td3MqPfioYbgun3IvK/m8dQxMCnrPGZPg1kvXjp3SIekCN/ynw==}
+  '@types/node@18.19.79':
+    resolution: {integrity: sha512-90K8Oayimbctc5zTPHPfZloc/lGVs7f3phUAAMcTgEPtg8kKquGZDERC8K4vkBYkQQh48msiYUslYtxTWvqcAg==}
 
-  '@types/node@22.13.8':
-    resolution: {integrity: sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ==}
+  '@types/node@22.13.9':
+    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
 
   '@types/react-dom@19.0.4':
     resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
@@ -598,8 +598,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001701:
-    resolution: {integrity: sha512-faRs/AW3jA9nTwmJBSO1PQ6L/EOgsB5HMQQq4iCu5zhPgVVgO/pZRHlmatwijZKetFw8/Pr4q6dEN8sJuq8qTw==}
+  caniuse-lite@1.0.30001702:
+    resolution: {integrity: sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -1113,8 +1113,8 @@ packages:
       typeorm:
         optional: true
 
-  langsmith@0.3.11:
-    resolution: {integrity: sha512-pzA7wemfMjqCiaNY3AtUkQJ7jubIBmKRTl0dMNEUz8A4ewIqCEpB2caiTeeAwVkugEylny80cDk3u16WqL25Sw==}
+  langsmith@0.3.12:
+    resolution: {integrity: sha512-e4qWM27hxEr8GfO6dgXrc3W8La+wxkX1zEtMhxhqS/Th2ujTt5OH7x0uXfXFDqCv9WaC3nquo1Y2s4vpYmLLtg==}
     peerDependencies:
       openai: '*'
     peerDependenciesMeta:
@@ -1204,8 +1204,8 @@ packages:
   mongodb-connection-string-url@3.0.2:
     resolution: {integrity: sha512-rMO7CGo/9BFwyZABcKAWL8UJwH/Kc2x0g72uhDWzG48URRax5TCIcJ7Rc3RZqffZzO/Gwff/jyKwCU9TN8gehA==}
 
-  mongodb@6.14.0:
-    resolution: {integrity: sha512-AlM6alTx98vcnk/jMMmoYuBrm4qpe1/VrbwvL2SXEHjdtJ1ZbVZmrpyjUx9mqS94e9HcemzpLn+CxzhmT7b0uw==}
+  mongodb@6.14.2:
+    resolution: {integrity: sha512-kMEHNo0F3P6QKDq17zcDuPeaywK/YaJVCEQRzPF3TOM/Bl9MFg64YE5Tu7ifj37qZJMhwU1tl2Ioivws5gRG5Q==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.188.0
@@ -1744,7 +1744,7 @@ snapshots:
 
   '@anthropic-ai/sdk@0.37.0':
     dependencies:
-      '@types/node': 18.19.78
+      '@types/node': 18.19.79
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -1810,7 +1810,7 @@ snapshots:
   '@commitlint/execute-rule@19.5.0':
     optional: true
 
-  '@commitlint/load@19.6.1(@types/node@22.13.8)(typescript@5.8.2)':
+  '@commitlint/load@19.6.1(@types/node@22.13.9)(typescript@5.8.2)':
     dependencies:
       '@commitlint/config-validator': 19.5.0
       '@commitlint/execute-rule': 19.5.0
@@ -1818,7 +1818,7 @@ snapshots:
       '@commitlint/types': 19.5.0
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.8.2)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.13.8)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.13.9)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -1972,7 +1972,7 @@ snapshots:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.19
-      langsmith: 0.3.11(openai@4.86.1(zod@3.24.2))
+      langsmith: 0.3.12(openai@4.86.1(zod@3.24.2))
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
@@ -1986,7 +1986,7 @@ snapshots:
     dependencies:
       '@langchain/core': 0.3.42(openai@4.86.1(zod@3.24.2))
       '@langchain/langgraph-checkpoint': 0.0.15(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))
-      mongodb: 6.14.0
+      mongodb: 6.14.2
     transitivePeerDependencies:
       - '@aws-sdk/credential-providers'
       - '@mongodb-js/zstd'
@@ -2001,7 +2001,7 @@ snapshots:
       '@langchain/core': 0.3.42(openai@4.86.1(zod@3.24.2))
       uuid: 10.0.0
 
-  '@langchain/langgraph-sdk@0.0.45(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)':
+  '@langchain/langgraph-sdk@0.0.46(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)':
     dependencies:
       '@types/json-schema': 7.0.15
       p-queue: 6.6.2
@@ -2011,11 +2011,11 @@ snapshots:
       '@langchain/core': 0.3.42(openai@4.86.1(zod@3.24.2))
       react: 19.0.0
 
-  '@langchain/langgraph@0.2.51(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)':
+  '@langchain/langgraph@0.2.53(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)':
     dependencies:
       '@langchain/core': 0.3.42(openai@4.86.1(zod@3.24.2))
       '@langchain/langgraph-checkpoint': 0.0.15(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))
-      '@langchain/langgraph-sdk': 0.0.45(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)
+      '@langchain/langgraph-sdk': 0.0.46(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))(react@19.0.0)
       uuid: 10.0.0
       zod: 3.24.2
     transitivePeerDependencies:
@@ -2024,7 +2024,7 @@ snapshots:
   '@langchain/mongodb@0.1.0(@langchain/core@0.3.42(openai@4.86.1(zod@3.24.2)))':
     dependencies:
       '@langchain/core': 0.3.42(openai@4.86.1(zod@3.24.2))
-      mongodb: 6.14.0
+      mongodb: 6.14.2
     transitivePeerDependencies:
       - '@aws-sdk/credential-providers'
       - '@mongodb-js/zstd'
@@ -2103,21 +2103,21 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
     optional: true
 
   '@types/json-schema@7.0.15': {}
 
   '@types/node-fetch@2.6.12':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       form-data: 4.0.2
 
-  '@types/node@18.19.78':
+  '@types/node@18.19.79':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@22.13.8':
+  '@types/node@22.13.9':
     dependencies:
       undici-types: 6.20.0
 
@@ -2240,7 +2240,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001701: {}
+  caniuse-lite@1.0.30001702: {}
 
   chalk@2.4.2:
     dependencies:
@@ -2312,10 +2312,10 @@ snapshots:
 
   commander@4.1.1: {}
 
-  commitizen@4.3.1(@types/node@22.13.8)(typescript@5.8.2):
+  commitizen@4.3.1(@types/node@22.13.9)(typescript@5.8.2):
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@22.13.8)(typescript@5.8.2)
+      cz-conventional-changelog: 3.3.0(@types/node@22.13.9)(typescript@5.8.2)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -2340,9 +2340,9 @@ snapshots:
 
   conventional-commit-types@3.0.0: {}
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@22.13.8)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@22.13.9)(cosmiconfig@9.0.0(typescript@5.8.2))(typescript@5.8.2):
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.9
       cosmiconfig: 9.0.0(typescript@5.8.2)
       jiti: 2.4.2
       typescript: 5.8.2
@@ -2368,16 +2368,16 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  cz-conventional-changelog@3.3.0(@types/node@22.13.8)(typescript@5.8.2):
+  cz-conventional-changelog@3.3.0(@types/node@22.13.9)(typescript@5.8.2):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.1(@types/node@22.13.8)(typescript@5.8.2)
+      commitizen: 4.3.1(@types/node@22.13.9)(typescript@5.8.2)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.6.1(@types/node@22.13.8)(typescript@5.8.2)
+      '@commitlint/load': 19.6.1(@types/node@22.13.9)(typescript@5.8.2)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -2745,7 +2745,7 @@ snapshots:
       js-tiktoken: 1.0.19
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
-      langsmith: 0.3.11(openai@4.86.1(zod@3.24.2))
+      langsmith: 0.3.12(openai@4.86.1(zod@3.24.2))
       openapi-types: 12.1.3
       p-retry: 4.6.2
       uuid: 10.0.0
@@ -2759,7 +2759,7 @@ snapshots:
       - openai
       - ws
 
-  langsmith@0.3.11(openai@4.86.1(zod@3.24.2)):
+  langsmith@0.3.12(openai@4.86.1(zod@3.24.2)):
     dependencies:
       '@types/uuid': 10.0.0
       chalk: 4.1.2
@@ -2838,7 +2838,7 @@ snapshots:
       '@types/whatwg-url': 11.0.5
       whatwg-url: 14.1.1
 
-  mongodb@6.14.0:
+  mongodb@6.14.2:
     dependencies:
       '@mongodb-js/saslprep': 1.2.0
       bson: 6.10.3
@@ -2864,7 +2864,7 @@ snapshots:
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001701
+      caniuse-lite: 1.0.30001702
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
@@ -2905,7 +2905,7 @@ snapshots:
 
   openai@4.86.1(zod@3.24.2):
     dependencies:
-      '@types/node': 18.19.78
+      '@types/node': 18.19.79
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
