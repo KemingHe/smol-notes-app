@@ -1,5 +1,17 @@
-.notes-grid {
-  @apply grid gap-5 m-5 mt-0 sm:mt-5 sm:ms-0;
+.container {
+  display: grid;
+  gap: 1.25rem; /* gap-5 */
+  margin: 1.25rem; /* m-5 */
+  margin-top: 0; /* mt-0 */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: minmax(250px, auto);
+}
+
+/* Media query for responsive behavior */
+@media (min-width: 640px) {
+  /* sm: breakpoint */
+  .container {
+    margin-top: 1.25rem; /* sm:mt-5 */
+    margin-left: 0; /* sm:ms-0 */
+  }
 }

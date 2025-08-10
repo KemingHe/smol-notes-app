@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.safeActionsGroup {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.unsafeActionsGroup {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  color: #e11d48; /* text-rose-600 */
+}
+
+.actionButton {
+  padding: 0.125rem;
+  border-radius: 9999px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Safe action variations */
+.actionButtonSafe {
+  color: #9ca3af; /* text-gray-400 */
+}
+
+.actionButtonSafe:hover {
+  color: #0ea5e9; /* hover:text-sky-500 */
+}
+
+/* Favorite action variation */
+.actionButtonFavorite {
+  color: #9ca3af; /* text-gray-400 */
+}
+
+.actionButtonFavorite .actionIcon {
+  fill: transparent;
+  transition: color 0.2s, fill 0.2s;
+}
+
+.actionButtonFavorite:hover {
+  color: #ec4899; /* hover:text-pink-500 */
+}
+
+.actionButtonFavorite:hover .actionIcon {
+  fill: currentColor;
+}
+
+/* Unsafe/destructive action variations */
+.actionButtonUnsafe {
+  color: #9ca3af; /* text-gray-400 */
+  padding: 0.25rem; /* p-1 */
+}
+
+.actionButtonUnsafe:hover {
+  background-color: #fda4af; /* hover:bg-rose-300 */
+  color: #9f1239; /* hover:text-rose-800 */
+}
+
+/* Icon sizing */
+.actionIcon {
+  width: 1rem;
+  height: 1rem;
+}

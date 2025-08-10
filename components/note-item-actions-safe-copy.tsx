@@ -1,13 +1,16 @@
 import { DocumentDuplicateIcon } from '@heroicons/react/24/outline';
+import { clsx } from 'clsx';
 import type { JSX } from 'react';
+
+import styles from '@/components/note-item-actions.module.css';
 
 export const CopyAction = (): JSX.Element => {
   return (
     <button
       type="button"
-      className="p-0.5 rounded-full text-gray-400 hover:text-sky-500"
+      className={clsx(styles.actionButton, styles.actionButtonSafe)}
     >
-      <DocumentDuplicateIcon className="size-4" />
+      <DocumentDuplicateIcon className={styles.actionIcon} />
     </button>
   );
 };

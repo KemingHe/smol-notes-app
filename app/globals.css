@@ -1,10 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-@layer base {
-  textarea,
-  input {
-    @apply rounded-md border border-black p-2 text-base;
+/* Apply antialiasing for all text */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Set height to dynamic viewport height */
+body {
+  height: 100dvh; /* dynamic viewport height */
+  overflow: hidden;
+}
+
+/* For browsers that don't support dvh yet */
+@supports not (height: 100dvh) {
+  body {
+    height: 100vh;
   }
+}
+
+/* Reset some browser defaults */
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
 }

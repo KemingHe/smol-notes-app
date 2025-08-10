@@ -1,13 +1,16 @@
 import { TrashIcon } from '@heroicons/react/24/outline';
+import { clsx } from 'clsx';
 import type { JSX } from 'react';
+
+import styles from '@/components/note-item-actions.module.css';
 
 export const DeleteAction = (): JSX.Element => {
   return (
     <button
       type="button"
-      className="p-1 rounded-full hover:bg-rose-300 hover:text-rose-800"
+      className={clsx(styles.actionButton, styles.actionButtonUnsafe)}
     >
-      <TrashIcon className="size-4" />
+      <TrashIcon className={styles.actionIcon} />
     </button>
   );
 };

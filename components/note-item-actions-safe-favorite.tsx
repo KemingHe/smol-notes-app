@@ -1,15 +1,16 @@
-import { HeartIcon as HeartIconOutline } from '@heroicons/react/24/outline';
-import { HeartIcon as HeartIconSolid } from '@heroicons/react/24/solid';
+import { HeartIcon } from '@heroicons/react/24/outline';
+import { clsx } from 'clsx';
 import type { JSX } from 'react';
+
+import styles from '@/components/note-item-actions.module.css';
 
 export const FavoriteAction = (): JSX.Element => {
   return (
     <button
       type="button"
-      className="group p-0.5 rounded-full text-gray-400 hover:text-pink-500"
+      className={clsx(styles.actionButton, styles.actionButtonFavorite)}
     >
-      <HeartIconOutline className="size-4 group-hover:hidden" />
-      <HeartIconSolid className="size-4 hidden group-hover:flex" />
+      <HeartIcon className={styles.actionIcon} />
     </button>
   );
 };

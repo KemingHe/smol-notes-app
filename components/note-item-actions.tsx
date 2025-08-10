@@ -6,18 +6,20 @@ import { FavoriteAction } from '@/components/note-item-actions-safe-favorite';
 import { ShareAction } from '@/components/note-item-actions-safe-share';
 import { DeleteAction } from '@/components/note-item-actions-unsafe-delete';
 
+import styles from '@/components/note-item-actions.module.css';
+
 export const NoteItemActions = (): JSX.Element => {
   return (
-    <div className="flex items-center justify-between mt-0.5 mb-1">
+    <div className={styles.container}>
       {/* Safe actions. */}
-      <div className="flex flex-shrink-0 justify-start gap-1">
+      <div className={styles.safeActionsGroup}>
         <FavoriteAction />
         <EditAction />
         <CopyAction />
         <ShareAction />
       </div>
       {/* Unsafe actions. */}
-      <div className="flex flex-shrink-0 justify-end gap-1 text-rose-600">
+      <div className={styles.unsafeActionsGroup}>
         <DeleteAction />
       </div>
     </div>
