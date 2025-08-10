@@ -1,3 +1,11 @@
+# ⚠️ [Archived] ⚠️ Smol Notes App
+
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+>
+> - **Archived**: 2025-08-10 by [@KemingHe](https://github.com/KemingHe)
+> - **Archive reason**: moved on to more advanced agentic AI development
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
